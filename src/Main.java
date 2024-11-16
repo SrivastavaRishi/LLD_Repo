@@ -7,7 +7,7 @@ class Demo{
 
 public class Main {
     public static void main(String[] args) {
-        Demo v1 = new Demo(5);
+        Demo v1 = new Demo(15);
         Demo v2 = new Demo(3);
 
         System.out.println(v1.a);
