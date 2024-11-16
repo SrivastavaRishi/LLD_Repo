@@ -30,7 +30,7 @@ class DatabaseConnectionManager {
     }
 
     private Connection createConnection() {
-        // Create and return a new database connection
+        // Create and return a new db connection
         return connectionPool.getFirst();
     }
 
