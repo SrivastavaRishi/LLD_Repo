@@ -53,7 +53,18 @@ class DatabaseConnectionManager {
 
 public class Main {
     public static void main(String[] args) {
-        SingletonClass sc = new SingletonClass();
-        sc.print();
+        // Access the Singleton instance
+        EagerInit singleton1 = EagerInit.getInstance();
+
+        // Call methods on the Singleton instance
+        singleton1.showMessage("Hello from Singleton!");
+        System.out.println("Addition: " + singleton1.add(10, 20));
+        System.out.println("Multiplication: " + singleton1.multiply(5, 4));
+        System.out.println("Singleton Instance Hash Code: " + singleton1.getInstanceHashCode());
+
+        // Access the Singleton instance again
+        EagerInit singleton2 = EagerInit.getInstance();
+        System.out.println("Is the same instance? " + (singleton1 == singleton2));
+        System.out.println("Hash Code of Second Access: " + singleton2.getInstanceHashCode());
     }
 }
