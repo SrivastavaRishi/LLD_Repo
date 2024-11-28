@@ -8,6 +8,7 @@ public class EmailAlertObserver implements NotificationAlertObserver{
         this.observable = observable;
     }
     public void update(){
+        System.out.println("Email triggered !!");
         // calls a third party API to send email notification
         // observable object will contain info about the product
     }

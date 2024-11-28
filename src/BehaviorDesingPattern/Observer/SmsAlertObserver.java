@@ -1,13 +1,14 @@
 package BehaviorDesingPattern.Observer;
 
 public class SmsAlertObserver implements NotificationAlertObserver{
-    String emailId;
+    String mobile;
     StocksObservable observable;
-    SmsAlertObserver(String email, StocksObservable observable){
-        this.emailId = email;
+    SmsAlertObserver(String mobile, StocksObservable observable){
+        this.mobile = mobile;
         this.observable = observable;
     }
     public void update(){
+        System.out.println("SMS triggered !!");
         // calls a third party API to send email notification
         // observable object will contain info about the product
     }
