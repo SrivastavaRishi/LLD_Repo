@@ -1,4 +1,4 @@
-package BehaviorDesingPattern.Strategy;
+package BehaviorDesingPattern.Strategy.DriverStratergy;
 
 public class SportsDriveStratergy implements DriveStratergy {
     public void drive() {
